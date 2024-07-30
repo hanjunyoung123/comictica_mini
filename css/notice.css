@@ -2,16 +2,93 @@
 
 .service-area{
     width: 100%;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .service-area .inner{
     width: 100%;
     max-width: 1300px;
-    background-color: lightpink;
+    /* background-color: lightpink; */
     display: flex;
+    gap: 10px;
+    margin: auto;
+    padding-top: 40px;
 }
 
+.notice h2{
+    padding: 20px;
+    position: relative;
+}
+.notice h2::before{
+    content: "";
+    position: absolute;
+    top: -105px;
+    left: -62px;
+    width: 178px;
+    height: 198px;
+    scale: 20%;
+    /* mix-blend-mode: multiply; */
+    background: url("/images/character.png");
+}
+.free h2{
+    padding: 20px;
+    position: relative;
+}
+.free h2::before{
+    content: "";
+    position: absolute;
+    top: -105px;
+    left: -62px;
+    width: 178px;
+    height: 198px;
+    scale: 20%;
+    /* mix-blend-mode: multiply; */
+    background: url("/images/character.png");
+}
+
+/* .notice-board li, .free-board li{
+    list-style: square;
+} */
+
+/* 서비스 왼쪽 영역 */
 .service-left{
-    
+    width: calc(100% / 2);
+    border: 1px solid #eee;
+    border-radius: 25px;
+    background-color: rgb(255, 241, 228);
+}
+
+.notice-board{
+    padding: 0 20px 20px 20px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.notice-board li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffa51f;
+    margin-top: 8px;
+}
+
+
+/* 서비스 오른쪽 영역 */
+.service-right{
+    width: calc(100% / 2);
+    border: 1px solid #eee;
+    border-radius: 25px;
+    background-color: rgb(230, 230, 230);
+}
+
+.free-board{
+    padding: 0 20px 20px 20px;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
+.free-board li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffa51f;
+    margin-top: 8px;
 }
