@@ -137,3 +137,13 @@
     align-items: center;
     gap: 10px;
 }
+
+/* .cash-area a:nth-child(2){
+    content: "";
+    width: 1px;
+    height: 12px;
+    background-color: black;
+    top: 5px;
+    right: 10px;
+    
+} */
