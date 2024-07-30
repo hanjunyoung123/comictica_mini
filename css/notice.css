@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+.service-area{
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.service-area .inner{
+    width: 100%;
+    max-width: 1300px;
+    background-color: lightpink;
+    display: flex;
+}
+
+.service-left{
+    
+}
