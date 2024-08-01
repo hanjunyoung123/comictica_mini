@@ -1,12 +1,14 @@
 /* 슬라이드 영역 */
 
 .banner {
-  width: 1300px;
+  width: 100%;
   margin: auto;
 }
 
 .banner .inner {
+  width: 100%;
   max-width: 1300px;
+  margin: auto;
 }
 .sw-banner {
   width: 100%;
