@@ -13,6 +13,10 @@
     gap: 10px;
     margin: auto;
     padding-top: 40px;
+    
+}
+.service-area .inner h2{
+    margin-top: 0;
 }
 
 .notice h2{
@@ -33,6 +37,7 @@
 .free h2{
     padding: 20px;
     position: relative;
+    
 }
 .free h2::before{
     content: "";
@@ -46,8 +51,8 @@
     background: url("/images/character.png");
 }
 
-/* .notice-board li, .free-board li{
-    list-style: square;
+/* .notice h2::before, .free h2::before{
+    top: ;
 } */
 
 /* 서비스 왼쪽 영역 */
@@ -56,6 +61,14 @@
     border: 1px solid #eee;
     border-radius: 25px;
     background-color: rgb(255, 241, 228);
+    position: relative;
+}
+.service-left .notice > a {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    
 }
 
 .notice-board{
@@ -78,6 +91,13 @@
     border: 1px solid #eee;
     border-radius: 25px;
     background-color: rgb(230, 230, 230);
+    position: relative;
+}
+.service-right .free > a {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .free-board{
