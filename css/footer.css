@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+.footer{
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 -5px 5px -5px #686868;
+    margin-bottom: 20px;
+}
+
+.footer-inner{
+    max-width: 1300px;
+    background-color:#fff;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+/* 하단 왼쪽 */
+.footer-left{
+    width: 50%;
+}
+.footer-left *{
+    padding: 5px 10px;
+}
+
+.footer-logo a img{
+    width: 250px;
+    mix-blend-mode: multiply;
+}
+
+.footer-text{
+    width: 100%;
+}
+
+
+/* 하단 오른쪽 */
+
+.footer-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: auto;
+    
+}
+.footer-menu{
+    display: flex;
+}
+
+.footer-menu li {
+    position: relative;
+    padding: 0 10px;
+    /* background-color: aquamarine; */
+}
+.footer-menu li a{
+    position: relative;
+}
+.footer-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    background-color: #333;
+    top: 7px;
+    left: -10px;
+}
+
+.footer-menu li:first-child a::after{
+    content: none;
+}
+
+.footer-icons{
+    display: flex;
+}
+.footer-icons *{
+    margin: 8px 15px;
+    vertical-align: center;
+}
+
+.footer-icons a{
+    /* width: 100px; */
+    height: 60px;
+}
+.footer-icons a img{
+    height: 100%;
+}
