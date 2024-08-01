@@ -18,9 +18,9 @@
     <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
     <meta property="og:type" content="website" />
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta property="og:url" content="https://github.io/" />
+    <meta property="og:url" content="https://comictica-mini.vercel.app/" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-    <meta property="og:image" content="images/metaimg.png" />
+    <meta property="og:image" content="https://comictica-mini.vercel.app/images/logo%20(1).png" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="COMICTICA 웹사이트입니다." />
     <!-- 파비콘 -->
@@ -45,10 +45,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- 폰트 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/baner.css" />
     <link rel="stylesheet" href="css/mainOne.css" />
@@ -62,6 +62,7 @@
     <link rel="stylesheet" href="css/slide.css" />
     <!-- Swiper JS -->
     <script src="js/main.js"></script>
+    <script src="js/img.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
@@ -200,23 +201,28 @@
       <div class="best-Wrap">
         <div class="inner">
           <h2>1. 베스트셀러 만화</h2>
-          <span id="more">더보기</span>
+          <span id="more"><a href="">더보기</a></span>
           <ul class="famousCart-menu">
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
-                  <img src="images/krMainimg/kr_bestMain01.jpg" alt="한국인기만화 1" />
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                  <img src="images/krMainimg/kr_bestMain01.jpg" alt="한국인기만화 1"/ class="pic" data-src="images/krMainimg/kr_bestMain01.jpg">
                 </div>
                 <div class="famousCart-desc">
                   <p>신과함께</p>
                   <p>주호민</p>
                   <p>10,000원</p>
                 </div>
+                
               </a>
             </li>
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_bestMain02.jpg" alt="한국인기만화 2" />
                 </div>
                 <div class="famousCart-desc">
@@ -229,8 +235,11 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_bestMain03.jpg" alt="한국인기만화 3" />
                 </div>
+
                 <div class="famousCart-desc">
                   <p>이끼</p>
                   <p>윤태호</p>
@@ -241,6 +250,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpBestMain01.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -253,6 +264,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpBestMain02.png" alt="일본인기만화 2" />
                 </div>
                 <div class="famousCart-desc">
@@ -265,6 +278,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpBestMain03.png" alt="일본인기만화 3" />
                 </div>
                 <div class="famousCart-desc">
@@ -276,17 +291,28 @@
             </li>
           </ul>
         </div>
+        <div id="lightbox">
+        <h2 class="img-text">만화책 이미지를 클릭하시면 자세한내용이 나옵니다!</h2>
+        <img class="lightbox-content" id="lightboxImage">
+        <div id="lightboxImage-desc"><p>신과함께</p>
+        <p>작가 : 주호민</p>
+        <p>줄거리 : 나쁘지도 착하지도 않은 평범한 남자 김자홍이
+          저승에서 49일 동안 일곱 번의 재판을 받게 된다.</p>
+        </div>
+        
       </div>
-
+      </div>
       <!-- 2. 입고되자마자 팔림! 인기만화  -->
       <div class="Popularity-Wrap">
         <div class="inner">
           <h2>2. 입고되자마자 팔림! 인기만화</h2>
-          <span id="more">더보기</span>
+          <span id="more"><a href="">더보기</a></span>
           <ul class="famousCart-menu">
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_popularityMain01.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -299,6 +325,8 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_popularityMain02.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -311,7 +339,9 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
-                  <img src="images/krMainimg/kr_popularityMain03.jpg" alt="한국인기만화 1" />
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                  <img src="images/krMainimg/kr_popularityMain03.jpg" alt="한국인기만화 1"/>
                 </div>
                 <div class="famousCart-desc">
                   <p>순정빌런</p>
@@ -323,6 +353,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/jpMainImg/jpPopularityMain01.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -335,6 +367,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpPopularityMain02.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -347,6 +381,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpPopularityMain03.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -363,11 +399,13 @@
       <div class="allBuy-Wrap">
         <div class="inner">
           <h2>3. 전권 매입 알림코너</h2>
-          <span id="more">더보기</span>
+          <span id="more"><a href="">더보기</a></span>
           <ul class="famousCart-menu">
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_allMain01.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -380,6 +418,8 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_allMain02.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -392,6 +432,8 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_allMain03.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -404,6 +446,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpAllMain01.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -416,6 +460,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpAllMain02.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -428,6 +474,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpAllMain03.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -445,15 +493,16 @@
       <div class="mz_old-Wrap">
         <div class="inner">
           <h2>4. MZ가 모르는 고전 만화 추천</h2>
-          <span id="more">더보기</span>
+          <span id="more"><a href="">더보기</a></span>
           <ul class="famousCart-menu">
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
-                  <div class="image-area">
-                    <img src="images/krMainimg/kr_mzMain01.jpg" alt="한국인기만화 1" />
-                  </div>
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                  <img src="images/krMainimg/kr_mzMain01.jpg" alt="한국인기만화 1" />
                 </div>
+
                 <div class="famousCart-desc">
                   <p>각시탈</p>
                   <p>허영만</p>
@@ -464,11 +513,13 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_mzMain02.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
                   <p>열혈강호</p>
-                  <p>전극진 저자(글)  | 양재현 그림/만화</p>
+                  <p>전극진 저자(글) | 양재현 그림/만화</p>
                   <p>11,000원</p>
                 </div>
               </a>
@@ -476,6 +527,8 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_mzMain03.jpg" alt="한국인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -488,6 +541,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpMzMain01.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -500,6 +555,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpMzMain02.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -512,6 +569,8 @@
             <li class="famousCart-list jpActive">
               <a href="#">
                 <div class="image-area">
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="/images/jpMainImg/jpMzMain03.png" alt="일본인기만화 1" />
                 </div>
                 <div class="famousCart-desc">
@@ -580,5 +639,6 @@
       </div>
       <!-- 하단 -->
     </div>
+    
   </body>
 </html>
