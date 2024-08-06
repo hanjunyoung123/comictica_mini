@@ -1,14 +1,46 @@
 /* 공통영역 - 내부항목 */
-.jpActive {
+
+.krActive {
   display: none;
+}
+
+.hidden{
+  opacity: 0;
 }
 
 h2 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 6%;
   padding-top: 50px;
   font-size: 40px;
+  /* font-size: 2.8vw; */
 }
+
+/* 찜, 장바구니 모양 공통영역*/
+.image-area{
+  position: relative;
+}
+
+.image-icons{
+  display: flex;
+  position: absolute;
+  gap: 45%;
+  bottom: 3%;
+  right: 35px;
+  margin: 2% 3%;
+}
+.image-icons *{
+ color: orangered;
+ padding: 10%;
+ background-color: rgba(255, 255, 255, 0.8);
+ border: 1px solid #ff9736;
+ border-radius: 50%;
+ 
+}
+.image-icons i{
+  scale: 130%;
+}
+
 
 
 .best-Wrap .inner{
@@ -22,12 +54,14 @@ h2 {
   padding-bottom: 10px;
   text-align: right;
   font-size: 25px;
+  /* font-size: 1.5vw; */
 }
 .famousCart-menu {
   width: 100%;
   background-color: rgba(221, 221, 221);
   padding: 30px 30px;
   display: flex;
+  justify-content: space-between;
   gap: 15px;
   border-radius: 20px;
   max-width: 1300px;
@@ -41,7 +75,9 @@ h2 {
   background-color: antiquewhite;
   border-radius: 20px;
   box-shadow: 0px 0px 8px 2px #e2dfdf;
+  
 }
+
 .famousCart-list a {
   width: 100%;
   height: 100%;
@@ -54,6 +90,7 @@ h2 {
     /* height: 580px; */
     height: auto;
     /* height: 44.6vw; */
+    
     overflow: hidden;
     border-radius: 20px;
     /* box-shadow: 4px 4px 4px 0 #686868; */
@@ -68,9 +105,20 @@ h2 {
       display: block;
       width: 100%;
       height: auto;
+      /* height: 70px; */
       /* height: 7.3vw; */
+      /* word-break: break-all; */
       padding: 15px 25px;
       line-height: 30px;
+  }
+
+  .famousCart-desc p{
+    width: 100%;
+   /* max-width: 80%;  */
+    background-color: aquamarine;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   
   .famousCart-desc p:nth-child(1){
@@ -91,6 +139,8 @@ h2 {
     width: 100%;
     max-width: 1300px;
     margin: auto;
+    background-color: rgba(221, 221, 221);
+    border-radius: 20px
   }
 .Popularity-Wrap {
     width: 100%;
@@ -100,6 +150,8 @@ h2 {
     width: 100%;
     max-width: 1300px;
     margin: auto;
+    background-color: rgba(221, 221, 221);
+    border-radius: 20px
   }
   
   
