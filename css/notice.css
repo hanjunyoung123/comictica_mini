@@ -16,9 +16,12 @@
     
 }
 .service-area .inner h2{
+    font-size: 2rem;
     margin-top: 0;
 }
-
+.notice{
+    position: relative;
+}
 .notice h2{
     padding: 20px;
     position: relative;
@@ -33,6 +36,9 @@
     scale: 20%;
     /* mix-blend-mode: multiply; */
     background: url("/images/character.png");
+}
+.free{
+    position: relative;
 }
 .free h2{
     padding: 20px;
@@ -84,6 +90,13 @@
     margin-top: 8px;
 }
 
+.notice-board li a{
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 /* 서비스 오른쪽 영역 */
 .service-right{
@@ -112,3 +125,23 @@
     border-bottom: 1px solid #ffa51f;
     margin-top: 8px;
 }
+
+.free-board li a{
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.free-board li a span{
+    display: block;
+
+}
+
+/* .plus{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    font-size: 50px;
+
+} */

@@ -1,26 +1,77 @@
 @charset "utf-8";
+
+/* 메인 반응형 리스트 =================================*/
 @media screen and (max-width: 1300px) {
 
-
-    .famousCart-list {
-        width: 307vw;
-        height: 50vw;
-        background-color: antiquewhite;
-      }
+.famousCart-list {
+  width: 307vw;
+  height: 50vw;
+  
+}
       
 
-    .famousCart-list .image-area {
-        width: 100%;
-        height: 44.6vw;
-        overflow: hidden;
-      }
+.famousCart-list .image-area {
+  width: 100%;
+  height: 44.6vw;
+  overflow: hidden;
+  }
       
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 815px) {
   .famousCart-list {
-    width: 31.85vw;
-    /* height: 92.85vw; */
+  width: 29.57vw;
+  }
+  
+
+.famousCart-list .image-area {
+  
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .famousCart-list {
+    width: 28.82vw;
+  
+  }
+  
+
+.famousCart-list .image-area {
+  
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .famousCart-list {
+    width: 27vw;
+  }
+  
+
+.famousCart-list .image-area {
+    width: 100%;
+    overflow: hidden;
+  }
+
+}
+@media screen and (max-width: 420px) {
+  .famousCart-list {
+    width: 25.7vw;
+  }
+  
+
+.famousCart-list .image-area {
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .famousCart-list {
+    width: 24.2vw;
     background-color: antiquewhite;
   }
   
@@ -28,10 +79,13 @@
 .famousCart-list .image-area {
   
     width: 100%;
-    /* height: 82.85vw; */
     overflow: hidden;
   }
 }
+
+/* 메인 반응형 리스트 끝=================================*/
+
+
 
 
 
@@ -45,23 +99,51 @@
 }
 
 @media screen and (max-width: 900px){
-    html{
-        font-size: 12px !important;
-    }
 
     .search input::placeholder{
-        font-size: 0;
+        /* font-size: 0; */
     }
-   
+    .search input::placeholder{
+      content: "책 검색";
+    }
 
+    .header-navi{
+      width: calc(1300px - 800px);
+    }
+
+    /* text */
+    h2{
+      padding-top: 45px;
+      font-size: 35px;
+    }
+    .inner #more{
+      font-size :20px;
+      margin-top : 15px;
+    }
+    .famousCart-menu{
+      padding: 15px;
+    }
+}
+
+@media screen and (max-width: 857px){
+  .search-bt{
+    /* scale: 80%; */
+  }
 }
 
 @media screen and (max-width: 768px){
+  .search-mobile{
+    display: block;
+  }
+  .search{
+    display: none;
+  }
+
   .famousCart-desc{
     padding: 10px;
   }
     .famousCart-desc p{
-        width: 100%;
+        width: 95%;
        /* max-width: 80%;  */
         background-color: aquamarine;
         white-space: nowrap;
@@ -79,6 +161,143 @@
         font-size: 1rem;
       }
 }
+
+@media screen and (max-width: 655px){
+  .header-top{
+    /* padding: 5px; */
+    width: 100%;
+    height: 60px;
+  }
+  .header-logo{
+    width: auto;
+    height: 100%;
+  }
+  .header-logo a img{
+    width: auto;
+    height: 100%;
+  }
+
+  .changePageJP, .changePageKR{
+    width: 85px;
+    line-height: 1.2;
+  }
+  /* .search-mobile{
+    width: 100px;
+    height: 100%;
+  } */
+   .header-top *{
+    margin: 0;
+   }
+  .header-icons{
+    height: 50px;
+    /* margin: 3px; */
+  }
+  .header-icons > a img{
+    width: 25px;
+  }
+  .cash-area{
+    display: none;
+  }
+  .cash-area-mb{
+    display: block;
+    width: 6%;
+    margin: 5px;
+  }
+
+      /* text */
+      h2{
+        padding-top: 40px;
+        font-size: 30px;
+      }
+      .inner #more{
+        font-size :18px;
+        margin-top : 10px;
+      }
+      .famousCart-menu{
+        padding: 15px;
+        /* gap: 10px; */
+      }
+
+      /* 공지 영역 */
+      .service-area .inner{
+        flex-direction: column;
+        gap: 25px;
+      }
+      .service-left{
+        width: 90%;
+        margin: auto;
+      }
+      .service-right{
+        width: 90%;
+        margin: auto;
+      }
+      
+}
+@media screen and (max-width: 600px){
+  .footer-icons{
+    flex-direction: column;
+    align-items: center
+}
+  .footer-icons a{
+    height: 50px;
+    /* margin: 0; */
+  }
+}
+
+@media screen and (max-width: 520px){
+
+  .header-top{
+    padding: 4px 0;
+    box-shadow: 0 5px 5px -5px #686868;
+  }
+
+  /* .header{
+    margin: 8px;
+  } */
+  .header-bottom{
+    display: none;
+  }
+
+  .mainbt{
+    display: none;
+  }
+  .mobilebt{
+    display: block;
+    color: aliceblue;
+}
+.changePageJP, .changePageKR{
+  width: 55px;
+  line-height: 1.2;
+}
+
+      /* text */
+      h2{
+        padding-top: 25px;
+        font-size: 25px;
+      }
+      .inner #more{
+        font-size :16px;
+        margin-top : 10px;
+      }
+      .famousCart-menu{
+        justify-content: space-evenly;
+        padding: 12px;
+        /* gap: none; */
+      }
+
+      .footer-icons{
+        flex-direction: column;
+        align-items: center
+    }
+    .footer-logo a img{
+      width: 200px;
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 500px){
     .famousCart-desc p:nth-child(1) {
         font-size: 1rem;
@@ -90,18 +309,58 @@
       .famousCart-desc p:nth-child(3) {
         font-size: 0.8rem;
       }
+
 }
 @media screen and (max-width: 500px){
-    .famousCart-desc p{
-        
-    }
+  .header-top{
+    padding: 8px;
+    position: fixed;
+    width: 100vw;
+    max-width: 500px;
+    z-index: 9999;
+    /* margin: 0; */
+  }
+  .banner{
+    padding-top: 55px;
+  }
+
+  }
+
+
+
+@media screen and (max-width: 440px){
+  .header-icons .bookmark, .header-icons .cart{
+    display: none;
+  }
+  /* .header .changePageJP, .header .changePageKR{
+    display: none;
+  } */
+
+  /* .top{
+    display: flex;
+  } */
+}
+@media screen and (max-width: 400px){
+  h2{
+    padding-top: 22px;
+    font-size: 20px;
+  }
+  .inner #more{
+    font-size :14px;
+    margin-top : 10px;
+  }
+  .famousCart-menu{
+    justify-content: space-evenly;
+    padding: 9px;
+    /* gap: none; */
+  }
+
+  .footer-icons{
+    flex-direction: column;
+    align-items: center
+}
+.footer-logo a img{
+  width: 200px;
+}
 }
 
-.famousCart-desc p{
-  width: 100%;
- /* max-width: 80%;  */
-  background-color: aquamarine;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
