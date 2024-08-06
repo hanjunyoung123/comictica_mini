@@ -4,7 +4,6 @@
 }
 
 h2 {
-
   text-align: center;
   margin-top: 50px;
   padding-top: 50px;
@@ -151,35 +150,15 @@ h2 {
   border-radius: 20px;
 }
 
-
 /* 라이트박스 적용 */
 #lightbox{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 99999;
-  /* display: none; */
-}
-#lightbox > .lightbox-content{
-  width: 400px;
-  height: 476px;
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  display: none;
-}
-#lightboxImage-desc{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.9);
-  width: 40%;
-  height: 50%;
-  position: absolute;
-  top: 20%;
-  left: 26%;
-  display: none;
 }
 #lightbox h2{
   position: absolute;
@@ -187,4 +166,38 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+#imgbox{
+  width: 1200px;
+  height: auto;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translate(-50% , -50%);
+}
+#lightboxImage{
+  width: 350px;
+  height: 422px;
+  position: relative;
+  display: none;
+
+}
+#lightboxImage-desc{
+  display: none;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 422px;
+  margin-left: 10px;
+  padding: 10px 20px;
+}
+#lightboxImage-desc > ul{
+  font-size: 19px;
+}
+#lightboxImage-desc ul li:nth-child(1){
+  font-size: 35px;
+}
+#lightboxImage-desc ul li:nth-child(3){
+  font-size: 23px;
 }
