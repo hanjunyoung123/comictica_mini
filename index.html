@@ -18,10 +18,10 @@
     <!-- 소셜 미디어에서 페이지가 웹사이트임을 명시 -->
     <meta property="og:type" content="website" />
     <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
-    <meta property="og:url" content="https://comictica-mini.vercel.app/" />
+    <meta property="og:url" content="https://comictica-mini-git-hanjunyoung-hanjunyoung123s-projects.vercel.app/" />
     <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
 
-    <meta property="og:image" content="https://comictica-mini.vercel.app/images/logo%20(1).png" />
+    <meta property="og:image" content="https://comictica-mini-git-hanjunyoung-hanjunyoung123s-projects.vercel.app/images/logo%20(1).png" />
 
     <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
     <meta property="og:description" content="COMICTICA 웹사이트입니다." />
@@ -118,9 +118,10 @@
             </button>
             <!-- 헤더 아이콘 -->
             <div class="header-icons">
-              <a href="#" class="bookmark"><img src="/images/bookmark.png" alt="북마크/찜" class="header-bookmark" /></a>
-              <a href="#" class="cart"><img src="/images/cart.png" alt="카트" class="header-cart" /></a>
-              <a href="#" class="menubar"><img src="/images/menu-bar.png" alt="메뉴바" class="header-menubar" /></a>
+
+              <a href="#"><img src="images/bookmark.png" alt="북마크/찜" class="header-bookmark" /></a>
+              <a href="#"><img src="images/cart.png" alt="카트" class="header-cart" /></a>
+              <a href="#"><img src="images/menu-bar.png" alt="메뉴바" class="header-menubar" /></a>
             </div>
           </div>
           <!-- 헤더 네비 -->
@@ -233,7 +234,7 @@
           <span id="more"><a href="">더보기</a></span>
           <ul class="famousCart-menu">
             <li class="famousCart-list krActive">
-              <a href="#">
+              <a href="#" class="no-scroll">
                 <div class="image-area">
                   <img src="images/krMainimg/kr_bestMain01.jpg" alt="한국인기만화 1"/ class="pic" data-src="images/krMainimg/kr_bestMain01.jpg">
                   <div class="image-icons">
@@ -331,15 +332,29 @@
             </li>
           </ul>
         </div>
+
         <div id="lightbox">
-          <h2 class="img-text">만화책 이미지를 클릭하시면 자세한내용이 나옵니다!</h2>
-          <img class="lightbox-content" id="lightboxImage" />
-          <div id="lightboxImage-desc">
-            <p>신과함께</p>
-            <p>작가 : 주호민</p>
-            <p>줄거리 : 나쁘지도 착하지도 않은 평범한 남자 김자홍이 저승에서 49일 동안 일곱 번의 재판을 받게 된다.</p>
+          <h2 class="img-text">만화책 이미지를 클릭하시면 자세한 내용이 나옵니다!</h2>
+          <div id="imgbox">
+            <div id="img">
+              <img id="lightboxImage">
+            </div>
+            <div id="lightboxImage-desc">
+              <ul>
+                <li>신과함께</li><br>
+                <li>작가 : 주호민</li><br>
+                <li>1. 저승편<br>
+                  주인공 김자홍이 사망한 후, 저승에서 49일 동안 일곱 개의 재판을 거치는 이야기를 중심으로 합니다. </li>
+                  2. 이승편<br>
+                  이승편에서는 저승 차사인 강림도령이 주인공으로, 살아있는 사람들의 문제를 해결하기 위해 이승으로 파견되는 이야기를 다룹니다.
+                  <br>
+                  3. 신화편<br>
+                  신화편은 고대 신화와 전설을 재해석한 이야기로, 강림도령의 과거와 신들의 이야기를 중심으로 전개됩니다.
+              </ul>
+            </div>
           </div>
         </div>
+        
       </div>
       <!-- 2. 입고되자마자 팔림! 인기만화  -->
       <div class="Popularity-Wrap">
@@ -382,11 +397,12 @@
             <li class="famousCart-list krActive">
               <a href="#">
                 <div class="image-area">
+
+                  <i class="fa-solid fa-heart" id="heart"></i>
+                  <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   <img src="images/krMainimg/kr_popularityMain03.jpg" alt="한국인기만화 1" />
-                  <div class="image-icons">
-                    <i class="fa-solid fa-heart" id="heart"></i>
-                    <i class="fa-solid fa-cart-shopping" id="cart"></i>
                   </div>
+
                 </div>
                 <div class="famousCart-desc">
                   <p>순정빌런</p>
