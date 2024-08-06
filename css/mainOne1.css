@@ -1,0 +1,120 @@
+/* 공통영역 - 내부항목 */
+.jpActive {
+  display: none;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 50px;
+}
+.best-Wrap {
+  width: 100%;
+}
+
+.best-Wrap .inner {
+  width: 100%;
+  max-width: 1300px;
+}
+.inner #more {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: right;
+}
+.famousCart-menu {
+  width: 100%;
+  /* height: 650px; */
+  height: 38.23vw;
+  background-color: aqua;
+  display: flex;
+  gap: 15px;
+}
+.famousCart-list {
+  width: calc(100% / 3);
+  /* width: 423px; */
+  /* width: 307vw; */
+  height: 100%;
+  /* height: 50vw; */
+  background-color: antiquewhite;
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px 2px #e2dfdf;
+}
+.famousCart-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+ 
+}
+.famousCart-list a .image-area {
+  position: relative;
+  width: 100%;
+  height: 31.76vw;
+  overflow: hidden;
+}
+.famousCart-list a .image-area img {
+  width: 100%;
+  /* overflow: hidden; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+}
+.famousCart-desc{
+  background-color: blueviolet;
+  width: 100%;
+ 
+  /* padding: 5px 15px; */
+  /* padding: 15px 25px; */
+  /* line-height: 30px; */
+
+}
+.famousCart-desc p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.famousCart-desc p:nth-child(2) {
+  font-size: 1.1rem;
+}
+.famousCart-desc p:nth-child(3) {
+  font-size: 1.1rem;
+}
+/*인기만화 영역 -일본 */
+.best-Wrap {
+  width: 100%;
+}
+.best-Wrap .inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+.Popularity-Wrap {
+  width: 100%;
+}
+
+.Popularity-Wrap .inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* 전권매입 영역 - 일본 */
+.allBuy-Wrap {
+  width: 100%;
+}
+
+.allBuy-Wrap .inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* 전권매입 영역 - 일본 */
+.mz_old-Wrap {
+  width: 100%;
+}
+
+.mz_old-Wrap .inner {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
