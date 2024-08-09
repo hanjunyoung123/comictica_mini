@@ -106,6 +106,10 @@
             <div class="search-mobile">
               <input type="button" class="search-bt-mobile" />
             </div>
+            <form class="search-reset">
+              <input type="text" id="searchbar" placeholder="입력 후 엔터">  
+              <input type="reset" id="reset" value="X"> 
+            </form>
             <!-- 전환버튼 -->
             <button class="changePageJP vibration">
               <p class="mainbt">JAPAN CARTOON</p>
@@ -119,7 +123,22 @@
             <div class="header-icons">
               <a href="#" class="bookmark"><img src="/images/bookmark.png" alt="북마크/찜" class="header-bookmark" /></a>
               <a href="#" class="cart"><img src="/images/cart.png" alt="카트" class="header-cart" /></a>
-              <a href="#" class="menubar"><img src="/images/menu-bar.png" alt="메뉴바" class="header-menubar" /></a>
+
+              <a href="#" class="menubar">
+                <img src="/images/menu-bar.png" alt="메뉴바" class="header-menubar" />
+                <ul class="nav-gnb">
+                  <b>상품찾기</b>
+                  <li><a href="#">장르별</a></li>
+                  <li><a href="#">나라별</a></li>
+                  <li><a href="#">랭킹별</a></li>
+                  <hr>
+                  <li><a href="#">찜 목록</a></li>
+                  <li><a href="#">장바구니</a></li>
+                  <li><a href="#">멤버쉽</a></li>
+                  <li><a href="login.html">LOGIN</a></li>
+                </ul>
+              </a>
+
             </div>
           </div>
           <!-- 헤더 네비 -->
@@ -378,7 +397,9 @@
             <li class="famousCart-list krActive">
               <a href="#" class="no-scroll">
                 <div class="image-area">
+
                   <img src="images/krMainimg/kr_popularityMain03.jpg" alt="한국인기만화 3"data-img="순정빌런" class="imgttt" />
+
                   <div class="image-icons">
                     <i class="fa-solid fa-heart" id="heart"></i>
                     <i class="fa-solid fa-cart-shopping" id="cart"></i>
@@ -660,8 +681,8 @@
           <!-- 서비스 왼쪽 -->
           <div class="service-left">
             <div class="notice">
-              <a href="#"><span>더보기</span></a>
-              <!-- <a href="#" class="plus"><span>+</span></a> -->
+              <a href="#" class="service-more"><span>더보기</span></a>
+              <a href="#" class="plus"><span>+</span></a>
               <h2>NOTICE</h2>
               <ul class="notice-board">
                 <li>
@@ -686,8 +707,8 @@
           <!-- 서비스 오른쪽 -->
           <div class="service-right">
             <div class="free">
-              <a href="#"><span>더보기</span></a>
-              <!-- <a href="#" class="plus"><span>+</span></a> -->
+              <a href="#" class="service-more"><span>더보기</span></a>
+              <a href="#" class="plus"><span>+</span></a>
               <h2>FREE BOARD</h2>
               <ul class="free-board">
                 <li>

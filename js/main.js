@@ -97,4 +97,44 @@ window.onload = function () {
   jpBt.addEventListener("click", changeJp);
   krBt.addEventListener("click", changeKr);
 
+
+ // 돋보기 버튼 누르면 입력창이 나오는 코드 
+ const searchMb = document.querySelector(".search-mobile")
+const searchBar = document.querySelector(".search-reset")
+searchMb.addEventListener("click",function(){
+  searchBar.style.display = "block"
+})
+
+//입력창을 켠상태로 창을 늘렸을 때 자동으로 사라지는 코드
+window.addEventListener('resize', function() {
+  if (window.innerWidth >= 768) {
+    searchBar.style.display = 'none'; // 창 크기가 768px 이상일 때 입력창 숨기기
+  }
+});
+
+//입력창 바깥을 누르거나 스크롤하면 입력창이 사라지는 코드
+document.addEventListener("click", function(event) {
+  if (!searchBar.contains(event.target) && !searchMb.contains(event.target)) {
+    searchBar.style.display = "none";
+  }
+});
+window.addEventListener("scroll", function() {
+  searchBar.style.display = "none";
+});
+
+// 메뉴바 아이콘을 누르면 네비가 나오는 코드
+  const menubar = document.querySelector(".menubar")
+  const navGnb = document.querySelector(".nav-gnb")
+  menubar.addEventListener("click", function(){
+    navGnb.classList.toggle("active")
+  })
+
+
+  // 목록 개별 삭제하기 버튼(x) 기능
+  const reset = document.querySelector("#reset")
+  const inputValue = document.querySelector("#searchbar").value
+  reset.addEventListener("click" , function(){
+    inputValue.innerHTML = ""
+  })
+
 };
