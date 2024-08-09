@@ -17,6 +17,9 @@
     /* display: flex; */
 }
 
+
+/* 해더 상단 */
+
 .header-top{
     /* position: fixed;
     top: 0;
@@ -34,6 +37,8 @@
 .header-top *{
     margin: 7px;
 }
+
+/* .header-logo, .search , .search-mobile */
 
 .header-logo{
     /* width: 20%; */
@@ -71,7 +76,7 @@
     width: 85%;
     border: 0;
     outline: none;
-    background-color: bisque;
+    /* background-color: bisque; */
 }
 
 .search-bt{
@@ -93,6 +98,48 @@
     background-color: orange;
     cursor: pointer;
     display: none;
+}
+
+.search-reset{
+    display: none;
+    width: 60%;
+    padding: 10px 20px;
+    height: 38px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    background-color: white;
+    z-index: 9;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px #754d007a;
+}
+#searchbar {
+    /* min-width: 270px; */
+    width: 83%;
+    position: absolute;
+    top: 6%;
+    left: 1%;
+    border: none;
+    height: auto;
+    /* background-color: antiquewhite; */
+   
+}
+#reset{
+    position: absolute;
+    top: 6%;
+    right: 1%;
+    /* width: 13%; */
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 100%;
+    font-weight: bold;
+    text-align: center;
+    /* display: none; */
+}
+#reset.completed{
+    
 }
 
 .search-bt-mobile{
@@ -174,7 +221,7 @@
     justify-content: space-between;
     align-items: center;
     /* gap: 10px; */
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
 }
 .header-icons > a{
     margin: 8px;
@@ -183,20 +230,68 @@
     width: 30px;
     height: auto;
 }
+.menubar{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+.nav-gnb{
+    top: 57px;
+    background-color: #fff;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    position: absolute;
+    height: auto;
+    /* text-align: right; */
+    text-align: center;
+    max-width: 170px;
+    width: 20vw;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+    display: none;
+}
+.nav-gnb li a{
+    margin: 0;
+}
+.nav-gnb.active{
+    display: block;
+}
+
+.nav-gnb b{
+    margin: 5px;
+    padding: 4px;
+    color: rgb(4, 0, 59);
+}
+.nav-gnb > li{
+    /* clear: both; */
+    /* margin: 0; */
+    margin: 5px;
+    padding: 4px;
+}
+
+.nav-gnb li:last-child a{
+    font-weight: bold;
+    color: orangered;
+}
+
+
+
+/* 헤더 하단 */
 
 .header-bottom{
     width: 100%;
     max-width: 1300px;
     padding: 10px;
     display: flex;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     /* box-shadow: 0 5px 5px -5px #686868; */
 }
 
 .header-navi{
     width: calc(1300px - 620px);
     height: 30px;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     /* background-color: blueviolet; */
     margin: auto;
     display: flex;
