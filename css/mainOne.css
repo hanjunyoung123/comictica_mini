@@ -27,13 +27,21 @@ h2 {
   margin: 2% 3%;
 }
 .image-icons *{
- color: orangered;
+ color: rgba(0, 0, 0, 0.26);
  padding: 10%;
  background-color: rgba(255, 255, 255, 0.8);
- border: 1px solid #ff9736;
+ /* border: 1px solid #ff9736; */
+ border: 1px solid rgba(0, 0, 0, 0.26);
  border-radius: 50%;
  
 }
+
+.image-icons .active {
+  color: orangered;
+  border: 1px solid #ff9736;
+}
+
+
 .image-icons i{
   scale: 130%;
 }
