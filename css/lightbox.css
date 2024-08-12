@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+@media screen and (max-width : 450px) {
+    #lightbox > h2{
+        margin:100% 60px;
+        font-size: 23px;
+    }
+}
