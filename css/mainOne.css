@@ -89,6 +89,8 @@ h2 {
   height: 100%;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  overflow: hidden;
 }
 .famousCart-list .image-area {
 
@@ -98,13 +100,15 @@ h2 {
     /* height: 44.6vw; */
     
     overflow: hidden;
-    border-radius: 20px;
+    
+    border-radius: none;
     /* box-shadow: 4px 4px 4px 0 #686868; */
   }
   
   .famousCart-list a img {
     width: 100%;
     height: 100%;
+
   }
   
   .famousCart-desc{

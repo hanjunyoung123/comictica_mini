@@ -77,18 +77,10 @@
   
 
 .famousCart-list .image-area {
-    width: 90px;
+  
+    width: 100%;
     overflow: hidden;
-    border-radius: 0;
-    height: 100px;
   }
-.famousCart-list{
-  border-radius: 0;
-  width: 90px;
-}
-.famousCart-menu{
-  gap: 0;
-}
 }
 
 /* 메인 반응형 리스트 끝=================================*/
@@ -129,7 +121,7 @@
       margin-top : 15px;
     }
     .famousCart-menu{
-      padding: 15px;
+      padding: 30px;
     }
 }
 
@@ -244,7 +236,7 @@
         margin-top : 10px;
       }
       .famousCart-menu{
-        padding: 15px;
+        padding: 30px;
         /* gap: 10px; */
       }
 
@@ -271,6 +263,14 @@
   .footer-icons a{
     height: 50px;
     /* margin: 0; */
+  }
+
+  .image-icons i{
+    scale : 100%
+  }
+  .image-icons{
+    gap: 24%;
+    right: 26px;
   }
 }
 
@@ -315,10 +315,18 @@
         margin-top : 10px;
       }
       .famousCart-menu{
+        /* flex-direction: column; */
+        /* align-items: center; */
         justify-content: space-evenly;
-        padding: 12px;
+        padding: 12px 30px;
+        height: auto;
         /* gap: none; */
       }
+
+      /* .famousCart-list{
+        width: 100%;
+        height: ;
+      } */
 
       .footer-icons{
         flex-direction: column;
@@ -389,8 +397,7 @@
   }
   .famousCart-menu{
     justify-content: space-evenly;
-    padding: 9px;
-    
+    padding: 12px 30px;
     /* gap: none; */
   }
 
@@ -414,5 +421,4 @@
   width: 200px;
 }
 }
-
 
