@@ -137,4 +137,14 @@ window.addEventListener("scroll", function() {
     inputValue.innerHTML = ""
   })
 
+  const imageIcons = document.querySelectorAll(".image-icons *")
+  imageIcons.forEach(function(icons) {
+    icons.addEventListener("click", function() {
+      // 'active' 클래스를 토글하여 스타일 적용 및 해제
+      icons.classList.toggle("active");
+      })
+    })
+
+    
+
 };

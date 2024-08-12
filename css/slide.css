@@ -36,6 +36,8 @@
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
+  width: 90%;
+  /* background-color: bisque; */
   display: fixed;
   position: absolute;
   bottom: 10%;
@@ -44,7 +46,7 @@
 }
 
 .swiper-pagination-bullet {
-  width: 2%;
+  width: 3%;
   height: 6px;
   background-color: rgb(255, 112, 17);
   border-radius: 0;
@@ -53,6 +55,6 @@
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 5px;
+  margin: 0 9px;
 }
 
