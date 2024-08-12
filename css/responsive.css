@@ -77,10 +77,18 @@
   
 
 .famousCart-list .image-area {
-  
-    width: 100%;
+    width: 90px;
     overflow: hidden;
+    border-radius: 0;
+    height: 100px;
   }
+.famousCart-list{
+  border-radius: 0;
+  width: 90px;
+}
+.famousCart-menu{
+  gap: 0;
+}
 }
 
 /* 메인 반응형 리스트 끝=================================*/
@@ -382,6 +390,7 @@
   .famousCart-menu{
     justify-content: space-evenly;
     padding: 9px;
+    
     /* gap: none; */
   }
 
@@ -405,4 +414,5 @@
   width: 200px;
 }
 }
+
 
