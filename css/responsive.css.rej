@@ -1,0 +1,10 @@
+diff a/css/responsive.css b/css/responsive.css	(rejected hunks)
+@@ -121,7 +121,7 @@
+       margin-top : 15px;
+     }
+     .famousCart-menu{
+-      padding: 15px;
++      padding: 30px;
+     }
+ }
+ 
