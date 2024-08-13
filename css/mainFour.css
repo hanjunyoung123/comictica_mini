@@ -1,0 +1,20 @@
+@media screen and (max-width : 320px) {
+    .newNameH{
+        font-size: 40px;
+        margin: auto;
+        margin-top: 100px;
+        margin-bottom: 10px;
+    }
+    .book-img{
+        margin: auto 35px;
+        width: 250px;
+        height: 350px;
+        position: relative;
+    }
+    .newPlotP{
+        width: 250px;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
